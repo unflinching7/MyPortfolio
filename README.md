@@ -26,9 +26,9 @@ This portfolio is organized into the following categories, each demonstrating ex
 
 ### 5. **Synthesis Prototype Project**
 - **Chiropractic Scheduling and Management System**: A comprehensive project integrating predictive analytics and data management to optimize scheduling for multi-location practices. Includes:
-  - Code notebook (CAP.ipynb).
-  - Synthetic data file (chiropractic_data_with_features.csv).
-  - Pre-trained Random Forest model (random_forest_model.pkl).
+  - Code notebook (**CAP.ipynb**) with embedded **Synthesis Paper**.
+  - Synthetic data file (**chiropractic_data_with_features.csv**).
+  - Pre-trained Random Forest model (**random_forest_model.pkl**).
   - Visualizations: Heatmap and bar chart of system outputs.
   - Presentations: Slides and a demo video link.
 
@@ -79,7 +79,7 @@ CIDM6395/
 
 ### Synthesis_Prototype_Project/
 - **README.md**
-- CAP.ipynb
+- CAP.ipynb (includes the **Synthesis Paper**)
 - **data/**
   - chiropractic_data_with_features.csv
 - **models/**
@@ -92,9 +92,6 @@ CIDM6395/
   - missed_opportunities_bar.png
   - README.md
 
-
 ---
-
-
 
 Thank you for exploring my portfolio!
