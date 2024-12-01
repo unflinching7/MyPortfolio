@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Course Enrollment</title>
+</head>
+
+<body>
+    <h1>Create Course Enrollment</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Create Course Enrollment</button>
+    </form>
+</body>
+
+</html>

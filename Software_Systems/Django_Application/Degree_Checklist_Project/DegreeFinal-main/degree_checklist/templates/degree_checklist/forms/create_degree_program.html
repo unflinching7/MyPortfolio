@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Degree Program</title>
+</head>
+
+<body>
+    <h1>Create Degree Program</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Create Degree Program</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!-- degree_program_records.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Degree Program Records</title>
+</head>
+
+<body>
+    <h1>Degree Program Records</h1>
+    <table>
+        <thead>
+            <tr>
+                <th><a href="?sort_by=ProgramName">Program Name</a></th>
+                <th><a href="?sort_by=ProgramCode">Program Code</a></th>
+                <th><a href="?sort_by=TotalCredits">Total Credits</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for degree_program in degree_program_records %}
+            <tr>
+                <td>{{ degree_program.ProgramName }}</td>
+                <td>{{ degree_program.ProgramCode }}</td>
+                <td>{{ degree_program.TotalCredits }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3">No degree program records found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>

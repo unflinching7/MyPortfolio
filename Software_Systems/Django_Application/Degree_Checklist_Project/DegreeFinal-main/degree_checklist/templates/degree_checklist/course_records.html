@@ -1,0 +1,35 @@
+<!-- course_records.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Course Records</title>
+</head>
+
+<body>
+    <h1>Course Records</h1>
+    <table>
+        <thead>
+            <tr>
+                <th><a href="?sort_by=CourseName">Course Name</a></th>
+                <th><a href="?sort_by=CourseCode">Course Code</a></th>
+                <th><a href="?sort_by=CreditHours">Credit Hours</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for course in course_records %}
+            <tr>
+                <td>{{ course.CourseName }}</td>
+                <td>{{ course.CourseCode }}</td>
+                <td>{{ course.CreditHours }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3">No course records found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>

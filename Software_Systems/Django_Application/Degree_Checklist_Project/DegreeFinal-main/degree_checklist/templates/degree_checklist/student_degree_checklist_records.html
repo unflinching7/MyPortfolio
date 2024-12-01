@@ -1,0 +1,33 @@
+<!-- student_degree_checklist_records.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Degree Checklist Records</title>
+</head>
+
+<body>
+    <h1>Student Degree Checklist Records</h1>
+    <table>
+        <thead>
+            <tr>
+                <th><a href="?sort_by=ChecklistName">Checklist Name</a></th>
+                <th><a href="?sort_by=Status">Status</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for checklist in student_degree_checklist_records %}
+            <tr>
+                <td>{{ checklist.ChecklistName }}</td>
+                <td>{{ checklist.Status }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="2">No student degree checklist records found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>

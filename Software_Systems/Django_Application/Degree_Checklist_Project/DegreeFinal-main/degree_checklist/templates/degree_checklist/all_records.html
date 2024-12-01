@@ -1,0 +1,69 @@
+<!-- all_records.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>All Records</title>
+</head>
+
+<body>
+    <h1>All Records</h1>
+
+    <h2>Students</h2>
+    <ul>
+        {% for student in students %}
+        <li>{{ student.Name }} - {{ student.ContactInfo }} ({{ student.EnrollmentYear }})</li>
+        {% empty %}
+        <li>No students found.</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Degree Programs</h2>
+    <ul>
+        {% for program in degree_programs %}
+        <li>{{ program.ProgramName }} - {{ program.ProgramCode }} (Total Credits: {{ program.TotalCredits }})</li>
+        {% empty %}
+        <li>No degree programs found.</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Courses</h2>
+    <ul>
+        {% for course in courses %}
+        <li>{{ course.CourseName }} - {{ course.CourseCode }} (Credit Hours: {{ course.CreditHours }})</li>
+        {% empty %}
+        <li>No courses found.</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Degree Checklist Templates</h2>
+    <ul>
+        {% for template in degree_checklist_templates %}
+        <li>{{ template.TemplateName }} - {{ template.AcademicYear }}</li>
+        {% empty %}
+        <li>No degree checklist templates found.</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Student Degree Checklists</h2>
+    <ul>
+        {% for checklist in student_degree_checklists %}
+        <li>{{ checklist.ChecklistName }} - {{ checklist.Status }}</li>
+        {% empty %}
+        <li>No student degree checklists found.</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Course Enrollments</h2>
+    <ul>
+        {% for enrollment in course_enrollments %}
+        <li>{{ enrollment.Student.Name }} - {{ enrollment.Course.CourseName }} (Status: {{ enrollment.EnrollmentStatus
+            }})</li>
+        {% empty %}
+        <li>No course enrollments found.</li>
+        {% endfor %}
+    </ul>
+
+</body>
+
+</html>

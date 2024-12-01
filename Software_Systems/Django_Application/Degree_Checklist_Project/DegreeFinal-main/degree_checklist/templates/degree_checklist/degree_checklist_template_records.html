@@ -1,0 +1,33 @@
+<!-- degree_checklist_template_records.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Degree Checklist Template Records</title>
+</head>
+
+<body>
+    <h1>Degree Checklist Template Records</h1>
+    <table>
+        <thead>
+            <tr>
+                <th><a href="?sort_by=TemplateName">Template Name</a></th>
+                <th><a href="?sort_by=AcademicYear">Academic Year</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for template in degree_checklist_template_records %}
+            <tr>
+                <td>{{ template.TemplateName }}</td>
+                <td>{{ template.AcademicYear }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="2">No degree checklist template records found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>

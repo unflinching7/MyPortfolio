@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Degree Checklist Template</title>
+</head>
+
+<body>
+    <h1>Create Degree Checklist Template</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Create Degree Checklist Template</button>
+    </form>
+</body>
+
+</html>
