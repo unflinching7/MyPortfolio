@@ -71,10 +71,10 @@ CIDM6395/
 - **README.md**
 - **Django_Application/**
   - **Degree_Checklist_Project/**
-    - degree_checklist_code.py
+    - **DegreeFinal-main/**
     - README.md
 - **Ecommerce_System/**
-  - ecommerce_code.py
+  - **Ecommerce/**
   - README.md
 
 ### Synthesis_Prototype_Project/
