@@ -26,7 +26,7 @@ This portfolio is organized into the following categories, each demonstrating ex
 
 ### 5. **Synthesis Prototype Project**
 - **Chiropractic Scheduling and Management System**: A comprehensive project integrating predictive analytics and data management to optimize scheduling for multi-location practices. Includes:
-  - Code notebook (colab_notebook.ipynb).
+  - Code notebook (CAP.ipynb).
   - Synthetic data file (chiropractic_data_with_features.csv).
   - Pre-trained Random Forest model (random_forest_model.pkl).
   - Visualizations: Heatmap and bar chart of system outputs.
